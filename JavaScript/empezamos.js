@@ -63,19 +63,29 @@ greater (4, 8, 2, 17);
 
 function mcd_mcm(n1,n2) {
 
-	var mcd = function(a, b) {
-    if ( ! b) {
-        return a;
-    }
-	mcd(b, a % b);
-	};
 
-	var mcm = ni*n2/mcd(n1,n2);
+	function gcd(x, y) {
+	  if ((typeof x !== 'number') || (typeof y !== 'number')) 
+	    return false;
+	  x = Math.abs(x);
+	  y = Math.abs(y);
+	  while(y) {
+	    var t = y;
+	    y = x % y;
+	    x = t;
+	  }
+	  return x;
+	}
 
-	return "MCD = " + mcd(n1,n2) + ". MCM = " + mcm;
+	var mcd = gcd(n1,n2);
+
+	var mcm = n1*n2/mcd;
+
+	return "MCD = " + mcd + ". MCM = " + mcm;
+
 }
 
-mcd_mcm(3,9);
+mcd_mcm(8,42);
 
 
 function callit(){
