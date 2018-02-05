@@ -4,19 +4,11 @@ function square (number){
 	return number*number;
 }
 
-square(2);
-
-
 //Es parell o imparell?
 function pairs(number) {
 	if(number%2 == 0) return "Es parell";
 	return "Es imparell";
 }
-
-pairs(42);
-
-pairs(27);
-
 
 //Es rectangle o quadrat?
 function rectangle(horitz, vertical) {
@@ -25,11 +17,6 @@ function rectangle(horitz, vertical) {
 	else form = "rectangle";
 	return form;
 }
-
-rectangle(6,8);
-
-rectangle(3,3);
-
 
 //Factorial de number
 function factorial(number) {
@@ -41,14 +28,12 @@ function factorial(number) {
 	return result; 
 }
 
-factorial(4);
-
+//Velocidad de una bala dada una distancia y un tiempo
 function bullet_speed(meters,time) {
 	return (meters/time) + " m/s ";
 }
 
-bullet_speed(400,20);
-
+//Averigua cual de los 4 números es más grande
 function greater (n1,n2,n3,n4) {
 	var numbers = [n1,n2,n3,n4];
 	var i = 1;
@@ -59,8 +44,7 @@ function greater (n1,n2,n3,n4) {
 	return "Greater number is: " + great;
 }
 
-greater (4, 8, 2, 17);
-
+//Calcula el MCM y el MCD 
 function mcd_mcm(n1,n2) {
 
 
@@ -85,12 +69,9 @@ function mcd_mcm(n1,n2) {
 
 }
 
-mcd_mcm(8,42);
-
-
-function callit(){
-	return pairs(square(4));
+//Llama a pairs con el resultado de elevar al cuadrado el número dado
+function callit(n){
+	return pairs(square(n));
 }
 
-callit();
 
