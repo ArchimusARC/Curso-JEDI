@@ -70,8 +70,9 @@ function mcd_mcm(n1,n2) {
 }
 
 //Llama a pairs con el resultado de elevar al cuadrado el número dado
-function callit(n){
-	return pairs(square(n));
+function callit(number){
+	var aux = square(number);
+	return pairs(aux);
 }
 
 
