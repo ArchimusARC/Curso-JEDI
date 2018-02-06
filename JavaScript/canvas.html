@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		var cpelota;
+		var x = 100;
+		var y = 100;
+		var vx = 2;
+		var vy = 2;
+
+		function init() {
+			cpelota = document.getElementById("canvasPelota").getContext("2d");
+			cpelota.fillStyle = rgba(10,150,150,.5);
+			return setInterval(draw,10);
+		}
+
+		function circle(x,y) {
+			cpelota.beginPath();
+			cpelota.arc(x,y,20,0,Math.PI*2);
+			cpelota.closePath();
+			cpelota.fill();
+		}
+
+		function clear() {
+			cpelota.clearRect(0,0,300,300);
+		}
+
+		function draw() {
+			clear();
+			circle(x,y);
+			if(x + 20 + vx > 300 || x + vx < 0) {
+				vx = -vx;
+			}
+			if(y + 20 + vy > 300 || y + vy < 0) {
+				vy = -vy;
+			}
+			x += vx;
+			y += vy;
+		}
+
+		window.onload = function() {
+			init();
+		}
+	</script>
+</head>
+
+<body>
+	<canvas id="canvasPelota" width ="300" height="300"> 
+	</canvas>
+</body>
+</html>
