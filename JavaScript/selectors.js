@@ -1,14 +1,14 @@
-window.onload() {
+window.onload = function() {
 
-	function onClickRed() {
+	document.getElementById('button1').onClick = function() {
 		console.log("Red");
 	}
 
-	function onClickBlue() {
+	document.getElementById('button2').onClick = function() {
 		console.log("Blue");
 	}
 
-	function deleteThis() {
+	document.getElementById('deleteThis').onClick = function() {
 		console.log("DeleteThis");
 	}
 }
