@@ -33,8 +33,8 @@ function fade_to_none(tag, num) {
 $(window).on("load", function(){
  	wololo();
  	expando();
- 	shrinku();
  	giru_giru();
- 	fade_to_none("#holo", 20000);
- 	fade_to_none("#rotation2", 40000);
+ 	fade_to_none("#holo", 10000);
+ 	shrinku();
+ 	fade_to_none("#rotation2", 10000);
 });

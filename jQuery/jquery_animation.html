@@ -8,6 +8,12 @@
 		<style type="text/css">
 			
 			
+			#images{
+				display: flex;
+				justify-content: space-around;
+				align-content: center;
+			}
+
 			#holo {
 				font-size: 40px;
 				color: red;
@@ -18,7 +24,6 @@
 
 			#rotation2 {
 				position: relative;
-				float: right;
 				width: 150px;
 				height: 150px;
 				background-image: url("salty.jpg");
@@ -27,10 +32,10 @@
 
 			@keyframes rotation {
 				from {
-					transform: rotate(0deg);
+					transform: rotate(0deg) translateX(150px) rotate(0deg);
 				}
 				to {
-					transform: rotate(359deg);
+					transform: rotate(359deg) translateX(150px) rotate(-360deg);
 				}
 			}
 }
@@ -40,12 +45,11 @@
 	</head>
 
 	<body>
-		<div id="holo">
-		<br><br><br>
-		</div>
+		<div id= "images"> 
+			<div id="holo"></div>
 
-		<div id= "rotation2"> </div>
-	
+			<div id= "rotation2"> </div>
+		</div>
 	</body>
 
 </html>
