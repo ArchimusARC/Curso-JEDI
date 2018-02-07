@@ -1,0 +1,142 @@
+/*fonts
+<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+font-family: 'Aclonica';font-size: 22px;
+
+<link href='https://fonts.googleapis.com/css?family=Uncial Antiqua' rel='stylesheet'>
+font-family: 'Uncial Antiqua';font-size: 22px;
+*/
+
+html {
+	/*background-color: #915831;*/
+	width: 100%;
+	height: 100%;
+	background-color: #a87a36;
+	background-image: url("cream-dust.png");
+}
+
+h1{
+	font-family: 'Uncial Antiqua';
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+h1.head1{
+	font-family: 'Uncial Antiqua';
+	font-size: 40px;
+	text-transform: uppercase;
+	color: black;
+}
+
+h2{
+	font-family: 'Uncial Antiqua';
+	font-size: 25px;
+}
+
+h3{
+	font-family: 'Uncial Antiqua';
+	font-size: 20px;
+
+}
+
+p {
+	text-align: justify;
+	font-size: 17px;
+}
+
+#myheader {
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	justify-content: space-between;
+	border-bottom: 5px groove #404040;
+	background-color: #a87a36;
+	background-image: url("cream-dust.png");
+}
+
+header {
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	justify-content: space-between;
+	border-bottom: 10px groove #404040;
+	background-color: #a87a36;
+	background-image: url("cream-dust.png");
+}
+
+#mybody {
+	background-color: #a87a36;
+	background-image: url("cream-dust.png");
+}
+
+#mynav {
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	border: 4px groove #404040;
+	background-color: #666666;
+	background-image: url("concrete-wall-3.png");
+
+}
+
+a.nav_link {
+	color: black;
+	border-style: groove;
+	border-color: #404040;
+	padding-left: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color: #808080;
+	background-image: url("concrete-wall-3.png");
+
+}
+
+a.ext_link {
+	color: #262626;
+}
+
+a.nav_link_bts {
+	color: black;
+}
+
+aside {
+	background-color: #a87a36;
+	background-image: url("cream-dust.png");
+	padding-right: 50px;
+	margin-top: 50px;
+}
+
+#myaside {
+	background-color: #a87a36;
+	background-image: url("cream-dust.png");
+}
+
+article {
+	border-style: groove;
+	border-color: #404040;
+	width: 100%;
+}
+
+article.element {
+	background-color: #666666;
+	background-image: url("concrete-wall-3.png");
+	border-style: groove;
+	border-color: #404040;
+	width: 100%;
+}
+
+
+div.container-fluid{
+	background-color: #a87a36;
+	background-image: url("cream-dust.png");
+}
+
+button.btn-secondary{
+	border: groove #404040 5px;
+	background-color: #808080;
+	background-image: url("concrete-wall-3.png");
+}
+
+
