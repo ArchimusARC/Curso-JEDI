@@ -7,11 +7,7 @@
 		<script src="jquery_animation.js" type="text/javascript"></script>
 		<style type="text/css">
 			
-			body {
-				position: relative;
-				display: flex;
-				justify-content: center;
-			}
+			
 			#holo {
 				font-size: 40px;
 				color: red;
@@ -19,12 +15,37 @@
 				height: 456px;
 				background-image: url("putin.jpg");
 			}
+
+			#rotation2 {
+				position: relative;
+				float: right;
+				width: 150px;
+				height: 150px;
+				background-image: url("salty.jpg");
+				animation: rotation 2s infinite linear;
+			}
+
+			@keyframes rotation {
+				from {
+					transform: rotate(0deg);
+				}
+				to {
+					transform: rotate(359deg);
+				}
+			}
+}
+
+
 		</style>
 	</head>
 
 	<body>
-	<div id="holo">
-	</div>
+		<div id="holo">
+		<br><br><br>
+		</div>
+
+		<div id= "rotation2"> </div>
+	
 	</body>
 
 </html>

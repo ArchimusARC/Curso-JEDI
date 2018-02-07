@@ -10,14 +10,14 @@ function expando() {
 	$("#holo").animate({
 		width: "634px",
 		height:"634px"
-	}, 5000);
+	});
 }
 
 function shrinku() {
-	$("#holo").animate({
-		width: "317px",
-		height:"317px"
-	}, 5000);
+	$("#rotation2").animate({
+		width: "20px",
+		height:"20px"
+	}, "slow");
 }
 
 function giru_giru(){
@@ -25,8 +25,8 @@ function giru_giru(){
 }
 
 
-function fade_to_none() {
-	$("#holo").fadeTo(15000, 0.001);
+function fade_to_none(tag, num) {
+	$(tag).fadeTo(num, 0.001);
 }
 
 
@@ -34,6 +34,7 @@ $(window).on("load", function(){
  	wololo();
  	expando();
  	shrinku();
- 	//giru_giru();
- 	fade_to_none();
+ 	giru_giru();
+ 	fade_to_none("#holo", 20000);
+ 	fade_to_none("#rotation2", 40000);
 });
