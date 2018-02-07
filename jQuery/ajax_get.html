@@ -4,17 +4,39 @@
 <head>
 	<title>PKMN  GET AJAX</title>
 	<style src="ajax_get.css" type="text/css"></style>
+	<script src="ajax_get.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 
-	<div id="pkmn"> 
-		<th>ID</th>
-		<th>Normal Spirite</th>
-		<th>Shiny Spirite</th>
-		<th>Name</th>
-		<th>Type</th>
-	</div>
+	<table> 
+		<tr>
+			<th>ID</th>
+			<th>Normal Spirite</th>
+			<th>Shiny Spirite</th>
+			<th>Name</th>
+			<th>Type</th>
+		</tr>
+		<tr>
+			<td>
+				<span id ="ID"></span>
+			</td>
+			<td>
+				<img id = "nspirte" src="" alt="Spirite not found">
+			</td>
+			<td>
+				<img id = "sspirte" src="" alt="Spirite not found">
+			</td>
+			<td>
+				<span id ="name"></span>
+			</td>
+			<td>
+				<span id = "type"></span>
+			</td>
+		</tr>
+	</table>
 
 	<form id="search">
 		<button>Last</button>
