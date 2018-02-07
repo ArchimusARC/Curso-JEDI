@@ -13,7 +13,7 @@ window.onload = function() {
 		}
 
 	document.getElementById("deleteThis").onclick = function() {
-		var divs = document.getElementsByTagName = "div";
+		var divs = document.getElementsByTagName("div");
 		var i = 0;
 		for(i; i < divs.length; i++) {
 			divs[i].style.visibility = "hidden";
