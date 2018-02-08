@@ -96,9 +96,15 @@ a.nav_link {
 a.ext_link {
 	color: #262626;
 }
+a.ext_link:hover {
+	color: black;
+}
 
 a.nav_link_bts {
 	color: black;
+}
+a.nav_link_bts:hover {
+	color:black;
 }
 
 aside {
@@ -119,12 +125,13 @@ article {
 	width: 100%;
 }
 
-article.element {
+li.media {
 	background-color: #666666;
 	background-image: url("concrete-wall-3.png");
 	border-style: groove;
 	border-color: #404040;
 	width: 100%;
+	padding: 10px;
 }
 
 
@@ -134,9 +141,11 @@ div.container-fluid{
 }
 
 button.btn-secondary{
+	width: 12.5%;
 	border: groove #404040 5px;
 	background-color: #808080;
 	background-image: url("concrete-wall-3.png");
+
 }
 
 
