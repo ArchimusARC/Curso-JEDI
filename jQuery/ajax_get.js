@@ -8,11 +8,30 @@ $(window).on("load", function(){
 				console.log(data.id);
 				console.log(data.types[0].type.name);
 
-				$("#ID").text = data.id;
+				if(data.id == null) {
+					$("#pkmn_id").text("No hay datos");
+				}
+				else {
+					$("#pkmn_id").text(data.id);
+				}
+
 				$("#nsprite").attr("src", data.sprites.front_default);
 				$("#ssprite").attr("src", data.sprites.front_shiny);
-				$("#name").text = data.name;
-				$("#type").text = data.types[0].type.name;
+
+				if(data.name == null) {
+					$("#name").text("No hay datos");
+				}
+				else {
+					$("#name").text(data.name);
+				}
+
+				if(data.types[0].type.name ==null) {
+					$("#type").text("No hay datos");
+				}
+				else {
+					$("#type").text(data.types[0].type.name);
+				}
+
 				alert("Todo cargado");
 			}, "json");
 	}
@@ -34,6 +53,13 @@ $(window).on("load", function(){
 			current_pkmn-=1;
 			get_data(current_pkmn);
 			console.log(current_pkmn);
+		}
+	});
+
+	$("#search_btn").on({
+		click: function (){
+			get_data($("#search").val());
+			console.log($("#search").val());
 		}
 	});
 })
