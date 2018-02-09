@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<head>
+	<title> Login </title>
+</head>
+
+<body>
+	<fieldset>
+		<form action="/action_login.php">
+		  	Username:<br>
+		  	<input type="text" name="username" value="" required="">
+		  	<br>
+
+			Password:<br>
+			<input type="password" name="passw" value="" required="">
+			<br><br>
+
+			Type of user:<br>
+			<select name="userType">
+				  	<option value="Student"> Student </option>
+				  	<option value="Teacher"> Teacher </option>
+				  	<option value="Admin"> Admin</option>
+				  	<option value="Guest"> Guest</option>
+				</select>
+			<br><br>
+
+			Log In device:<br>
+			<input type="radio" name="dev" value="computer" checked> Computer<br>
+		  	<input type="radio" name="dev" value="tablet"> Tablet<br>
+		  	<input type="radio" name="dev" value="smartphone"> Smartphone
+			<br><br>
+
+			<input type="checkbox" name="keeplog" value="logged"> Keep me logged in<br>
+
+			<br><br>
+
+			<input type="submit" value="Log in">
+
+			
+		</form>
+	</fieldset>
+	
+</body>
+
+</html>

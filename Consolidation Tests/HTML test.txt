@@ -1,0 +1,14 @@
+1. To markup the web, its content and its structure...
+
+
+2. Css is used to create the styles and define the appearence of the different 
+   elements of our website
+
+3. To program the interactions of the website
+
+4. The title of the website that will appear on the tab, the favicon and the links
+   of the files or resources included
+
+5. The content of the website: text, headers, paragraphs, lists, navigation bar...
+
+6.

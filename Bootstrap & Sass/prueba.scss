@@ -1,0 +1,11 @@
+$primaryColor: #eeccff;
+$primaryColor: #ecc !default;
+
+body {
+  background: $primaryColor;
+  $primaryColor: #ccc !global;  
+}
+
+p {
+  color: $primaryColor;
+}
