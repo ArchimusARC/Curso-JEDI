@@ -36,6 +36,7 @@ $(window).on("load", function(){
 			}, "json");
 	}
 
+
 	var current_pkmn = 549;
 	get_data(current_pkmn);
 	
@@ -57,8 +58,10 @@ $(window).on("load", function(){
 
 	$("#search_btn").on({
 		click: function (){
-			get_data($("#search").val());
-			console.log($("#search").val());
+			current_pkmn = parseInt($("#search").val());
+			get_data(current_pkmn);
+			console.log(current_pkmn);
+
 		}
 	});
 })
