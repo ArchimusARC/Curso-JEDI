@@ -42,26 +42,35 @@ $(window).on("load", function(){
 	
 	$("#next_btn").on({
 		click: function (){
-			current_pkmn+=1;
-			get_data(current_pkmn);
-			console.log(current_pkmn);
+			if(current_pkmn < 802) {
+				current_pkmn+=1;
+				get_data(current_pkmn);
+				console.log(current_pkmn);
+			}
+			else alert("This is the last pokemon of this Pokedex");
+			
 		}
 	});
 
 	$("#last_btn").on({
 		click: function (){
-			current_pkmn-=1;
-			get_data(current_pkmn);
-			console.log(current_pkmn);
+			if(current_pkmn > 1) {
+				current_pkmn-=1;
+				get_data(current_pkmn);
+				console.log(current_pkmn);
+			}
+			else alert("This is the first pokemon of the Pokedex")
 		}
 	});
 
 	$("#search_btn").on({
 		click: function (){
-			current_pkmn = parseInt($("#search").val());
-			get_data(current_pkmn);
-			console.log(current_pkmn);
-
+			if(parseInt($("#search").val()) > 0 && parseInt($("#search").val()) < 803){
+				current_pkmn = parseInt($("#search").val());
+				get_data(current_pkmn);
+				console.log(current_pkmn);
+			}
+			else alert("No pokemon with that number");
 		}
 	});
 })
