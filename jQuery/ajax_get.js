@@ -36,7 +36,6 @@ $(window).on("load", function(){
 			}, "json");
 	}
 
-
 	var current_pkmn = 549;
 	get_data(current_pkmn);
 	
