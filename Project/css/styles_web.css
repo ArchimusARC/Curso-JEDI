@@ -14,12 +14,6 @@ html {
 	background-image: url("../media/cream-dust.png");
 }
 
-h1{
-	font-family: 'Uncial Antiqua';
-	font-size: 40px;
-	text-transform: uppercase;
-}
-
 h1.head1{
 	font-family: 'Uncial Antiqua';
 	font-size: 40px;
@@ -31,12 +25,6 @@ h2.head2{
 	font-family: 'Uncial Antiqua';
 	color: black;
 	font-size: 25px;
-}
-
-h3{
-	font-family: 'Uncial Antiqua';
-	font-size: 20px;
-
 }
 
 p {
@@ -51,17 +39,6 @@ p {
 	justify-content: center;
 	justify-content: space-between;
 	border-bottom: 5px groove #404040;
-	background-color: #a87a36;
-	background-image: url("../media/cream-dust.png");
-}
-
-header {
-	position: relative;
-	display: flex;
-	flex-flow: row;
-	justify-content: center;
-	justify-content: space-between;
-	border-bottom: 10px groove #404040;
 	background-color: #a87a36;
 	background-image: url("../media/cream-dust.png");
 }
@@ -82,41 +59,39 @@ header {
 
 }
 
-a.nav_link {
-	color: black;
-	border-style: groove;
-	border-color: #404040;
-	padding-left: 30px;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	background-color: #808080;
-	background-image: url("../media/concrete-wall-3.png");
 
+
+#myfooter {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+	background-image: url("../media/concrete-wall-3.png");
+	color: black;
+    text-align: center;
+    border: 4px groove #404040;
+    display: flex;
+    flex-flow: row;
 }
+
+div.container-fluid {
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 30px;
+	padding-top: 30px;
+	background-color: #a87a36;
+	background-image: url("../media/cream-dust.png");
+}
+
 
 a.ext_link {
 	color: #262626;
 }
 a.ext_link:hover {
 	color: black;
-}
-
-aside {
-	background-color: #a87a36;
-	background-image: url("../media/cream-dust.png");
-	padding-right: 50px;
-	margin-top: 50px;
-}
-
-#myaside {
-	background-color: #a87a36;
-	background-image: url("../media/cream-dust.png");
-}
-
-article {
-	border-style: groove;
-	border-color: #404040;
-	width: 100%;
 }
 
 li.media {
@@ -127,7 +102,6 @@ li.media {
 	width: 100%;
 	padding: 10px;
 }
-
 
 div.container-fluid{
 	background-color: #a87a36;
