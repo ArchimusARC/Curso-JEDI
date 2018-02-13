@@ -24,10 +24,16 @@ h1.head1{
 h2.head2{
 	font-family: 'Uncial Antiqua';
 	color: black;
-	font-size: 25px;
+	font-size: 30px;
 }
 
-p {
+h3.head3 {
+	color: black;
+	font-size: 20px;
+}
+
+p.p1 {
+	color: black;
 	text-align: justify;
 	font-size: 17px;
 }
@@ -59,12 +65,17 @@ p {
 
 }
 
-
+#mysection {
+	padding-right: 90px;
+	padding-left: 90px;
+	padding-top: 30px;
+	padding-top: 30px;
+}
 
 #myfooter {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	margin-top: 20px;
+	margin-top: 70px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -75,17 +86,13 @@ p {
     border: 4px groove #404040;
     display: flex;
     flex-flow: row;
+    align-items: center;
 }
 
 div.container-fluid {
-	padding-right: 50px;
-	padding-left: 50px;
-	padding-top: 30px;
-	padding-top: 30px;
 	background-color: #a87a36;
 	background-image: url("../media/cream-dust.png");
 }
-
 
 a.ext_link {
 	color: #262626;
