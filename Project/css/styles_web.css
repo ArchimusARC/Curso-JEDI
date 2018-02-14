@@ -95,10 +95,7 @@ div.element_header {
     align-items: center;
 }
 
-div.container-fluid {
-	background-color: #a87a36;
-	background-image: url("../media/cream-dust.png");
-}
+
 
 a.ext_link {
 	color: #262626;
@@ -131,6 +128,11 @@ div.container-fluid{
 	background-image: url("../media/cream-dust.png");
 }
 
+div.faq{
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
 a.button{
 	width: 12.5%;
 	padding: 5px;
@@ -156,4 +158,18 @@ hr.sep1 {
 	color: black;
 	background-color: black;
 	border-color: black;
+}
+
+
+input.iform {
+	width: 250px;
+}
+
+#enviar {
+	background-color: #808080;
+}
+
+#question {
+	width: 100%;
+    height: 150px;
 }
