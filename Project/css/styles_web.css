@@ -116,6 +116,16 @@ li.media {
 	padding: 10px;
 }
 
+li.li_norm {
+	color: black;
+
+}
+
+li.li_swords {
+	color: black;
+	list-style-image: url("../media/swords.png");
+}
+
 div.container-fluid{
 	background-color: #a87a36;
 	background-image: url("../media/cream-dust.png");
@@ -140,4 +150,10 @@ img.center {
 	display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+hr.sep1 {
+	color: black;
+	background-color: black;
+	border-color: black;
 }
