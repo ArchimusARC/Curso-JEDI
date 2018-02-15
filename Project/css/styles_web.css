@@ -182,3 +182,9 @@ input.iform {
 	width: 100%;
     height: 150px;
 }
+
+div.centervid {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
