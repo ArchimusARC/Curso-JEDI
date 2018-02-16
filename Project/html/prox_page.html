@@ -17,6 +17,15 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
+		<script src="../scripts/zabuto_calendar.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/zabuto_calendar.min.css">
+
+		<!-- initialize the calendar on ready -->
+		<script type="application/javascript">
+   			$(document).ready(function () {
+        		$("#my-calendar").zabuto_calendar();
+    		});
+		</script>
 	</head>
 
 	<body id="mybody">
@@ -54,6 +63,7 @@
 			<div class="container-fluid">
 				<h2 class="head2">Próximos Eventos</h2>
 
+				<div id="my-calendar"></div>
 
 				<ul class="list-unstyled">
 				    <li class="media">
