@@ -46,6 +46,12 @@ p.p1 {
 	font-size: 17px;
 }
 
+p.p2 {
+	color: black;
+	text-align: center;
+	font-size: 17px;
+}
+
 div.element_header {
 	display: flex;
 	justify-content: space-between;
@@ -101,6 +107,13 @@ div.element_header {
     display: flex;
     flex-flow: row;
     align-items: center;
+}
+
+article.myarticle {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
 }
 
 
